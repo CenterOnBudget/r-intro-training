@@ -77,7 +77,7 @@ bls_clean <- select(bls_raw, year = YEAR, cpi_u_rs = AVG)
 # explore some base R syntax.
 
 bls_clean$cpi_u_rs     # Select a column with `$`
-bls_clean$cpi_u_rs[43] # Select a specific element with `[ ]`
+bls_clean$cpi_u_rs[43] # Select element(s) with `[ ]`
 
 bls_clean$year
 bls_clean$year == 2019 # Apply logical test to year column
@@ -86,7 +86,7 @@ bls_clean$cpi_u_rs[bls_clean$year == 2019] # Subset with logical vector
 
 cpi_u_rs_2019 <- bls_clean$cpi_u_rs[bls_clean$year == 2019] # Good
 
-# For more on base R programming, see:
+# For more on base R syntax, see:
 # https://rstudio-education.github.io/hopr/
 
 
@@ -136,7 +136,9 @@ clean_data %>%
 # Use `mutate` to calculate real state support per FTE
 
 analysis_data <- mutate(
-  clean_data, real_support_fte = (support * cpi_u_rs_2019_adj) / fte
+  clean_data,
+  real_support = support * cpi_u_rs_2019_adj,
+  real_support_fte = real_support / fte
 )
 
 

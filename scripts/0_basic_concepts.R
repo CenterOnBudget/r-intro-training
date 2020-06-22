@@ -10,14 +10,14 @@
 
 # R objects
 
-x <- 14 / 63 # Store results in `x` object
+x <- 14 / 63 # Store results in `x`
 x
 
 is.vector(x) # `x` is a vector
 length(x) # More specifically, it is a vector of length 1
 
 # Think of a vector as a column
-# `x` is a column within only one row
+# `x` is a column with only one row
 
 vec <- c(1, 2, 3, 4, 5)
 vec
@@ -29,6 +29,7 @@ length(vec)
 seq(from = 1, to = 5, by = 1)
 
 vec2 <- -3:5
+vec2
 vec2 < 0 # This hints at a powerful feature of R, vectorized code
 
 
