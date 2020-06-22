@@ -18,8 +18,8 @@ Recommended learning resources for concepts covered in this training include:
 This repository is organized as follows:
 
 - `data-raw\` contains raw, unaltered data files retrieved from online
-- `data\` contains a clean `.csv` dataset with selected variables, including state support for higher education and FTE enrollment
-- `results\` contains a shareable results spreadsheet with findings for [*your state here*]
+- `data\` contains a clean `.csv` dataset with selected variables, including support for higher education, FTE enrollment, and inflation
+- `results\` contains a shareable results spreadsheet with findings for [your state here]
 - `scripts\` contains code for the training
 
 ## Contact
