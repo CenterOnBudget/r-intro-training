@@ -4,7 +4,7 @@
 
 ## Overview
 
-R training based on analyzing trends in state higher education funding. Concepts covered include simple base R syntax and [tidyverse](https://github.com/tidyverse) tools for data import, cleaning, analysis, and export.
+R training based on analyzing trends in state higher education funding using data from [SHEEO](https://shef.sheeo.org/) and [BLS](https://www.bls.gov/cpi/research-series/home.htm). Concepts covered include simple base R syntax and [tidyverse](https://github.com/tidyverse) tools for data import, cleaning, analysis, and export.
 
 ## Learning resources
 
@@ -18,7 +18,7 @@ Recommended learning resources for concepts covered in this training include:
 This repository is organized as follows:
 
 - `data-raw/` contains raw, unaltered data files retrieved from online
-- `data/` contains a clean `.csv` dataset with selected variables, including support for higher education, FTE enrollment, and inflation
+- `data/` contains a clean `.csv` dataset with selected variables
 - `results/` contains a shareable results spreadsheet with findings for [your state here]
 - `scripts/` contains code for the training
 
