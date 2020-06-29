@@ -2,7 +2,6 @@
 
 
 # These packages include additional functions we'll use today
-# For more on the tidyverse, see: https://r4ds.had.co.nz
 
 library(tidyverse)
 library(readxl)
@@ -34,6 +33,7 @@ download.file(
 
 
 # Use `read_excel` function to import SHEEO data from spreadsheet
+# Store results of `read_excel` in an object named `sheeo_raw`
 
 sheeo_raw <- read_excel(
   path = "data-raw/sheeo_shef_fy19_data.xlsx",
@@ -41,13 +41,13 @@ sheeo_raw <- read_excel(
   col_names = TRUE # This is a default argument
 )
 
+# Use `view` function to browse SHEEO data
+
+# view(sheeo_raw)
+
 
 # Use same approach to import BLS data
-
-# Notice that we can take advantage of positional and default arguments.
-# Using position to indicate the first argument of a function is pretty
-# standard practice. Still, use positional arguments sparingly since they
-# can make code less clear.
+# Note that we can take advantage of positional and default arguments
 
 bls_raw <- read_excel("data-raw/bls_cpi_u_rs.xlsx", skip = 5)
 
@@ -55,7 +55,7 @@ bls_raw <- read_excel("data-raw/bls_cpi_u_rs.xlsx", skip = 5)
 # Clean data -------------------------------------------------------------------
 
 
-# Use `select` function to clean SHEEO data
+# Use `names` and `select` functions to clean SHEEO data
 
 names(sheeo_raw)
 
@@ -68,26 +68,23 @@ sheeo_clean <- select(
 )
 
 
-# Use same function to clean BLS data
+# Use same approach to clean BLS data
 
 bls_clean <- select(bls_raw, year = YEAR, cpi_u_rs = AVG)
 
 
-# How do we get the value of the CPI-U-RS for 2019? To do this, we will
-# explore some base R syntax.
+# How do we get the value of the CPI-U-RS for 2019?
+# To do this, we will explore some base R syntax
 
-bls_clean$cpi_u_rs     # Select a column with `$`
-bls_clean$cpi_u_rs[43] # Select element(s) with `[ ]`
+bls_clean$cpi_u_rs     # Select a column by name with `$`
+bls_clean$cpi_u_rs[43] # Select element(s) by position with `[ ]`
 
 bls_clean$year
 bls_clean$year == 2019 # Apply logical test to year column
 
-bls_clean$cpi_u_rs[bls_clean$year == 2019] # Subset with logical vector
+bls_clean$cpi_u_rs[bls_clean$year == 2019] # Select element(s) with logical vector
 
-cpi_u_rs_2019 <- bls_clean$cpi_u_rs[bls_clean$year == 2019] # Good
-
-# For more on base R syntax, see:
-# https://rstudio-education.github.io/hopr/
+cpi_u_rs_2019 <- bls_clean$cpi_u_rs[bls_clean$year == 2019]
 
 
 # Use `mutate` function to create inflation adjustment for 2019
@@ -102,8 +99,9 @@ bls_clean <- mutate(bls_clean, cpi_u_rs_2019_adj = cpi_u_rs_2019 / cpi_u_rs)
 
 clean_data <- left_join(sheeo_clean, bls_clean, by = "year")
 
-# Another power of using R (and tidyverse functions) is the ability
-# to merge on more than one ID (e.g., by year, state, and county)
+# A power of using R (and tidyverse functions) is the ability to merge on more
+# than one ID (e.g., by year, state, and county). We don't need that power today,
+# but it is worth keeping in mind!
 
 
 # Verify data ------------------------------------------------------------------
@@ -142,22 +140,23 @@ analysis_data <- mutate(
 )
 
 
-# Use `filter` function to restrict results to one state
+# Use `pivot_wider` and pipes to create a table
 
-results <- filter(analysis_data, state == "Texas")
+real_support_fte_table <- analysis_data %>%
+  arrange(year) %>%
+  filter(year %in% c(2008:2019) & state != "District of Columbia") %>%
+  select(state, year, real_support_fte) %>%
+  pivot_wider(names_from = year, values_from = real_support_fte) %>%
+  mutate(change = `2019` - `2008`)
 
-
-# Look at results with `ggplot2`
-
-ggplot(data = results) +
-  geom_line(aes(x = year, y = real_support_fte))
+print(real_support_fte_table, n = Inf)
 
 
 # Export data ------------------------------------------------------------------
 
 
 write_csv(analysis_data, "data/higher_ed_data.csv")
-write_xlsx(results, "results/higher_ed_results.xlsx")
+write_xlsx(real_support_fte_table, "results/real_support_fte_table.xlsx")
 
 
 # End of script ----------------------------------------------------------------
