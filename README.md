@@ -6,7 +6,7 @@
 
 R training based on analyzing trends in state higher education funding using data from [SHEEO](https://shef.sheeo.org/) and [BLS](https://www.bls.gov/cpi/research-series/home.htm). Concepts covered include simple base R syntax and [tidyverse](https://github.com/tidyverse) tools for data import, cleaning, analysis, and export.
 
-## Learning Resources
+## Resources
 
 This training draws on the work of [Hadley Wickham](http://hadley.nz/), [Garret Grolemund](https://rstudio.com/speakers/garrett-grolemund/), and [RStudio](https://rstudio.com/), whose educational resources have been invaluable to the R community. For more on the concepts covered in this training, check out:
 

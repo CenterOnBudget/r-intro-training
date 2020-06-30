@@ -8,12 +8,12 @@
 
 # Writing commands in scripts
 
-29 + 56 # Click `Run` or use keyboard shortcut to send to Console
+29 + 56 # Click `Run` or use keyboard shortcut to execute
 44 / 78
 23 - 9
 
 
-# Creating R objects (see Environment pane)
+# Creating R objects
 
 14 / 63
 
@@ -23,7 +23,7 @@ x * 100
 
 1:5 # We can use `:` to return integers from 1 to 5
 
-vec <- 1:5 # Store results in object named `vec`
+vec <- 1:5
 vec
 vec / 5
 vec / vec # This behavior is called element-wise execution
@@ -63,13 +63,12 @@ mean_age <- take_mean(ages) # We can store results in an object
 
 mean(ages) # R already comes with a function for means
 
-?mean # For help with a given R function (see Help pane)
+?mean # For help with a given R function
 
 
 # In closing
 # - RStudio layout
 # - RStudio projects (and working directories)
-# - Other questions?
 
 
 # End of script ----------------------------------------------------------------

@@ -113,8 +113,8 @@ count(clean_data, state)
 print(count(clean_data, state), n = Inf) # Consistent with SHEEO README
 
 
-# Sneak-peek at more advanced tools:
-# Use pipe, `filter`, `summarize`, and friends to check US totals
+# A look at more advanced tools:
+# Use pipes, `filter`, `summarize`, and more to replicate US totals
 
 clean_data %>%
   filter(state == "U.S.") %>%
@@ -140,10 +140,11 @@ analysis_data <- mutate(
 )
 
 
-# Use `pivot_wider` and pipes to create a table
+# Use pipes, `pivot_wider`, and more to create a table
 
 real_support_fte_table <- analysis_data %>%
   arrange(year) %>%
+  # Data for DC starts in 2011
   filter(year %in% c(2008:2019) & state != "District of Columbia") %>%
   select(state, year, real_support_fte) %>%
   pivot_wider(names_from = year, values_from = real_support_fte) %>%
