@@ -43,7 +43,7 @@ sheeo_raw <- read_excel(
 
 # Use `view` function to browse SHEEO data
 
-# view(sheeo_raw)
+view(sheeo_raw)
 
 
 # Use same approach to import BLS data
@@ -113,8 +113,20 @@ count(clean_data, state)
 print(count(clean_data, state), n = Inf) # Consistent with SHEEO README
 
 
-# A look at more advanced tools:
+# A look at some more advanced tools:
 # Use pipes, `filter`, `summarize`, and more to replicate US totals
+
+
+# Pause: What are pipes?
+
+filter(clean_data, state == "Texas")
+# Is the same as
+clean_data %>% filter(state == "Texas")
+
+# Or more generally, f(x, y) is the same as x %>% f(y)
+
+
+# Back to verifying
 
 clean_data %>%
   filter(state == "U.S.") %>%

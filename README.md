@@ -1,6 +1,6 @@
 # R-higher-ed-training
 
-[![Project Status: WIP – Initial development is in progress, but there has not yet been a stable, usable release suitable for the public.](https://www.repostatus.org/badges/latest/wip.svg)](https://www.repostatus.org/#wip)
+[![Project Status: Active - The project has reached a stable, usable state and is being actively developed.](https://www.repostatus.org/badges/latest/active.svg)](https://www.repostatus.org/#active)
 
 ## Overview
 
@@ -12,6 +12,8 @@ This training draws on the work of [Hadley Wickham](http://hadley.nz/), [Garret 
 
 - [R for Data Science](https://r4ds.had.co.nz/) by Hadley Wickham and Garrett Grolemund
 - [Hands-On Programming with R](https://rstudio-education.github.io/hopr/) by Garrett Grolemund
+
+If you've already read the above resources and would like to further deepen your understanding of R, I recommend checking out [Advanced R](https://adv-r.hadley.nz/index.html) by Hadley Wickham.
 
 ## Organization
 

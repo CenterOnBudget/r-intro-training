@@ -28,11 +28,11 @@ vec
 vec / 5
 vec / vec # This behavior is called element-wise execution
 
-is.vector(vec) # `vec` is a vector (a type of object)
-length(vec)    # More specifically, `vec` is a vector of length 5
+# `vec` is a vector (a type of object)
+length(vec) # More specifically, `vec` is a vector of length 5
 
 # In the context of data analysis, think of a vector as a column in an
-# Excel spreadsheet. `vec` is like a column with 5 rows.
+# Excel spreadsheet. `vec` is like a column with 5 values.
 
 c(1, 2, 3, 4, 5)
 seq(from = 1, to = 5, by = 1)
