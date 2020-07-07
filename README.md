@@ -23,6 +23,7 @@ This repository is organized as follows:
 - `data/` contains a clean `.csv` dataset with selected variables
 - `results/` contains a spreadsheet with key findings
 - `scripts/` contains code for the training
+- `slides/` contains opening slides for the training
 
 ## Contact
 
