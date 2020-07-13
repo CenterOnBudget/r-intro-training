@@ -17,7 +17,7 @@
 
 14 / 63
 
-x <- 14 / 63 # Store results in object named `x`
+x <- 14 / 63 # Create object named `x` that contains value of `14 / 63`
 x
 x * 100
 
@@ -32,7 +32,15 @@ vec / vec # This behavior is called element-wise execution
 length(vec) # More specifically, `vec` is a vector of length 5
 
 # In the context of data analysis, think of a vector as a column in an
-# Excel spreadsheet. `vec` is like a column with 5 values.
+# Excel spreadsheet. `vec` is like a column with 5 values:
+
+# | x |
+# |---|
+# | 1 |
+# | 2 |
+# | 3 |
+# | 4 |
+# | 5 |
 
 c(1, 2, 3, 4, 5)
 seq(from = 1, to = 5, by = 1)
@@ -42,9 +50,15 @@ vec2
 vec2 < 0 # This hints at a powerful feature of R, vectorized code
 
 
-# Functions and arguments
+# Using R functions
 
 # What exactly is a function?
+
+# First, think of a function in math
+# f(x) = x^2
+# f(2) = 2^2 = 4
+
+# In R, functions take this form:
 
 take_mean <- function(x) {    # Name, argument(s)
   mean <- sum(x) / length(x)  # Body
