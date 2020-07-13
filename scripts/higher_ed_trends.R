@@ -8,27 +8,6 @@ library(readxl)
 library(writexl)
 
 
-# Retrieve data ----------------------------------------------------------------
-
-
-# Use `download.file` function to retrieve data
-
-# This is especially useful when retrieving a lot of data files on a
-# recurring basis. For this size project, it is not as important.
-
-# We can check the arguments of `download.file` by running `?download.file`
-
-download.file(
-  url = "https://shef.sheeo.org/wp-content/uploads/2020/04/SHEEO_SHEF_FY19_Report_Data.xlsx",
-  destfile = "data-raw/sheeo_shef_fy19_data.xlsx"
-)
-
-download.file(
-  url = "https://www.bls.gov/cpi/research-series/allitems.xlsx",
-  destfile = "data-raw/bls_cpi_u_rs.xlsx"
-)
-
-
 # Import data ------------------------------------------------------------------
 
 
