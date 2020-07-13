@@ -4,7 +4,7 @@
 
 ## Overview
 
-R training based on analyzing trends in state higher education funding using data from [SHEEO](https://shef.sheeo.org/) and [BLS](https://www.bls.gov/cpi/research-series/home.htm). Concepts covered include simple base R syntax and [tidyverse](https://github.com/tidyverse) tools for data import, cleaning, analysis, and export.
+R training based on analyzing trends in state higher education funding using data from [SHEEO](https://shef.sheeo.org/data-downloads/) and [BLS](https://www.bls.gov/cpi/research-series/home.htm). Concepts covered include simple base R syntax and [tidyverse](https://github.com/tidyverse) tools for data import, cleaning, analysis, and export.
 
 ## Resources
 
@@ -15,11 +15,13 @@ This training draws on the work of [Hadley Wickham](http://hadley.nz/), [Garret 
 
 If you've already read the above resources and would like to further deepen your understanding of R, I recommend checking out [Advanced R](https://adv-r.hadley.nz/index.html) by Hadley Wickham.
 
+In addition to drawing on the above resources, I've also strived to adopt [these rules](http://teachtogether.tech/#the-rules) from Greg Wilson's [Teaching Tech Together](http://teachtogether.tech/#).
+
 ## Organization
 
 This repository is organized as follows:
 
-- `data-raw/` contains raw, unaltered data files retrieved from online
+- `data-raw/` contains raw, unaltered data files downloaded from online
 - `data/` contains a clean `.csv` dataset with selected variables
 - `results/` contains a spreadsheet with key findings
 - `scripts/` contains code for the training
