@@ -105,7 +105,7 @@ clean_data %>% filter(state == "Texas")
 # Or more generally, f(x, y) is the same as x %>% f(y)
 
 
-# Back to verifying
+# Back to replicating US totals
 
 clean_data %>%
   filter(state == "U.S.") %>%

@@ -25,11 +25,8 @@ x * 100
 
 vec <- 1:5
 vec
-vec / 5
-vec / vec # This behavior is called element-wise execution
 
 # `vec` is a vector (a type of object)
-length(vec) # More specifically, `vec` is a vector of length 5
 
 # In the context of data analysis, think of a vector as a column in an
 # Excel spreadsheet. `vec` is like a column with 5 values:
@@ -42,42 +39,32 @@ length(vec) # More specifically, `vec` is a vector of length 5
 # | 4 |
 # | 5 |
 
-c(1, 2, 3, 4, 5)
-seq(from = 1, to = 5, by = 1)
-
-vec2 <- -3:5
-vec2
-vec2 < 0 # This hints at a powerful feature of R, vectorized code
-
 
 # Using R functions
 
-# What exactly is a function?
-
-# First, think of a function in math
-# f(x) = x^2
-# f(2) = 2^2 = 4
-
-# In R, functions take this form:
-
-take_mean <- function(x) {    # Name, argument(s)
-  mean <- sum(x) / length(x)  # Body
-  mean                        # Last line of code (what gets returned)
-}
+# Let's look at some simple R functions
 
 ages <- c(20, 24, 24, 25, 26, 30, 35, 37, 44, 51)
 ages
 
-sum(ages) / length(ages)
-take_mean(x = ages)
+sum(ages)
+length(ages)
+mean(ages)
+sd(ages)
+hist(ages)
 
-take_mean(ages) # We can provide arguments by position
+# We use functions in R like:
+# - Formulas in Excel
+# - Commands in Stata
 
-mean_age <- take_mean(ages) # We can store results in an object
+# We can store the results of a function in an object
 
-mean(ages) # R already comes with a function for means
+mean_age <- mean(ages)
+mean_age
 
-?mean # For help with a given R function
+# For help with a given R function, use `?`
+
+?mean
 
 
 # In closing

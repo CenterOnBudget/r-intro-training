@@ -12,8 +12,7 @@ This training draws on the work of [Hadley Wickham](http://hadley.nz/), [Garret 
 
 - [R for Data Science](https://r4ds.had.co.nz/) by Hadley Wickham and Garrett Grolemund
 - [Hands-On Programming with R](https://rstudio-education.github.io/hopr/) by Garrett Grolemund
-
-If you've already read the above resources and would like to further deepen your understanding of R, I recommend checking out [Advanced R](https://adv-r.hadley.nz/index.html) by Hadley Wickham.
+- [Advanced R](https://adv-r.hadley.nz/index.html) by Hadley Wickham
 
 In addition to the above resources, this training also draws on [Teaching Tech Together](http://teachtogether.tech/#) by Greg Wilson. In particular, [these rules](http://teachtogether.tech/#the-rules) are used as guiding principles.
 
