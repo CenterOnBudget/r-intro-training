@@ -17,11 +17,11 @@
 
 14 / 63
 
-x <- 14 / 63 # Create object named `x` that contains value of `14 / 63`
+x <- 14 / 63 # Create an object named `x` that contains the value of `14 / 63`
 x
 x * 100
 
-1:5 # We can use `:` to return integers from 1 to 5
+1:5 # Use `:` to return integers from 1 to 5
 
 vec <- 1:5
 vec
@@ -57,14 +57,10 @@ hist(ages)
 # - Formulas in Excel
 # - Commands in Stata
 
-# We can store the results of a function in an object
-
-mean_age <- mean(ages)
+mean_age <- mean(ages) # Store function results in an object with `<-`
 mean_age
 
-# For help with a given R function, use `?`
-
-?mean
+?mean # Get help with `?`
 
 
 # In closing
