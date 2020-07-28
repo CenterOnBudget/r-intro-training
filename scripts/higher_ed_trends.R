@@ -1,4 +1,3 @@
-# Load packages ----------------------------------------------------------------
 
 
 # These packages include additional functions we'll use today
@@ -149,7 +148,4 @@ print(real_support_fte_table, n = Inf)
 
 write_csv(analysis_data, "data/higher_ed_data.csv")
 write_xlsx(real_support_fte_table, "results/real_support_fte_table.xlsx")
-
-
-# End of script ----------------------------------------------------------------
 

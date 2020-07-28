@@ -1,11 +1,7 @@
-# Load packages ----------------------------------------------------------------
 
 
 library(tidycensus)
 library(tidyverse)
-
-
-# Get data ---------------------------------------------------------------------
 
 
 # If this is your first time accessing the Census API:
@@ -54,23 +50,5 @@ acs_data %>%
 # count(reliable) # All are reliable
 
 
-# Pull multiple years of data
-
-get_us_data <- function(vars, year) {
-  get_acs(geography = "us", variables = vars,
-          year = year, survey = "acs1") %>%
-    mutate(year = year, .before = GEOID)
-}
-
-get_us_data("B19013_001", year = 2018) # Works as expected
-
-med_hh_income <- map_dfr(2005:2018, ~ get_us_data("B19013_001", year = .x))
-
-med_hh_income # These figures are not adjusted for inflation
-
-
 # For more, see: https://walker-data.com/tidycensus/
-
-
-# End of script ----------------------------------------------------------------
 

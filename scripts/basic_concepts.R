@@ -1,4 +1,3 @@
-# Basic R concepts -------------------------------------------------------------
 
 
 # Using R as a calculator (at the command line)
@@ -66,7 +65,4 @@ mean_age
 # In closing
 # - RStudio layout
 # - RStudio projects (and working directories)
-
-
-# End of script ----------------------------------------------------------------
 
