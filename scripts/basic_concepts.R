@@ -30,13 +30,13 @@ vec
 # In the context of data analysis, think of a vector as a column in an
 # Excel spreadsheet. `vec` is like a column with 5 values:
 
-# | x |
-# |---|
-# | 1 |
-# | 2 |
-# | 3 |
-# | 4 |
-# | 5 |
+# | vec |
+# |-----|
+# |  1  |
+# |  2  |
+# |  3  |
+# |  4  |
+# |  5  |
 
 
 # Using R functions
