@@ -16,6 +16,8 @@
 
 14 / 63
 
+# Use `<-` to create an object
+
 x <- 14 / 63 # Create an object named `x` that contains the value of `14 / 63`
 x
 x * 100
@@ -41,25 +43,33 @@ vec
 
 # Using R functions
 
-# Let's look at some simple R functions
-
-ages <- c(20, 24, 24, 25, 26, 30, 35, 37, 44, 51)
-ages
-
-sum(ages)
-length(ages)
-mean(ages)
-sd(ages)
-hist(ages)
-
 # We use functions in R like:
 # - Formulas in Excel
 # - Commands in Stata
 
-mean_age <- mean(ages) # Store function results in an object with `<-`
+# Functions take the basic form function(argument)
+
+vec
+sum(vec)
+mean(vec)
+
+# Use the `c` function to combine values
+
+ages <- c(20, 24, 24, 25, 26, 30, 35, 37, 44, 51)
+ages
+
+# Let's explore `ages`
+
+length(ages)
+mean(ages)
+median(ages)
+sd(ages)
+hist(ages)
+
+mean_age <- mean(ages) # Use `<-` to store function results in an object
 mean_age
 
-?mean # Get help with `?`
+?mean # Use `?` to get help
 
 
 # In closing
