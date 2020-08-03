@@ -14,7 +14,7 @@ This training draws on the work of [Hadley Wickham](http://hadley.nz/), [Garret 
 - [Hands-On Programming with R](https://rstudio-education.github.io/hopr/) by Garrett Grolemund
 - [Advanced R](https://adv-r.hadley.nz/index.html) by Hadley Wickham
 
-In addition to the above resources, this training also draws on [Teaching Tech Together](http://teachtogether.tech/#) by Greg Wilson. In particular, [these rules](http://teachtogether.tech/#the-rules) are used as guiding principles.
+In addition to the above resources, this training also draws on [Teaching Tech Together](http://teachtogether.tech/en/index.html) by Greg Wilson. In particular, [these rules](http://teachtogether.tech/en/index.html#the-rules) are used as guiding principles.
 
 ## Organization
 
