@@ -16,11 +16,13 @@ This training draws on the work of [Hadley Wickham](http://hadley.nz/), [Garret 
 
 In addition to the above resources, this training also draws on [Teaching Tech Together](http://teachtogether.tech/en/index.html) by Greg Wilson. In particular, [these rules](http://teachtogether.tech/en/index.html#the-rules) are used as guiding principles.
 
+PS: Be sure to also check out [RStudio Cheatsheets](https://rstudio.com/resources/cheatsheets/) for quick desktop references on topics like data import, cleaning, and visualization.
+
 ## Organization
 
 This repository is organized as follows:
 
-- `data-raw/` contains raw, unaltered data files downloaded from online
+- `data-raw/` contains original data files downloaded from online
 - `data/` contains a clean `.csv` dataset with selected variables
 - `results/` contains a spreadsheet with key findings
 - `scripts/` contains code for the training
