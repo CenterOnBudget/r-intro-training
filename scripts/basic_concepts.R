@@ -7,6 +7,8 @@
 
 # Writing commands in scripts
 
+# Use scripts to save your work
+
 29 + 56 # Click `Run` or use keyboard shortcut to execute
 44 / 78
 23 - 9
@@ -14,13 +16,19 @@
 
 # Creating R objects
 
+# Use objects to store data
+
 14 / 63
 
-# Use `<-` to create an object
+share <- 14 / 63 # Create an object with `<-`
+share
 
-x <- 14 / 63 # Create an object named `x` that contains the value of `14 / 63`
-x
-x * 100
+share * 100
+
+percent <- share * 100
+percent
+
+# Keep track of your objects with the environment pane
 
 1:5 # Use `:` to return integers from 1 to 5
 
@@ -66,7 +74,7 @@ median(ages)
 sd(ages)
 hist(ages)
 
-mean_age <- mean(ages) # Use `<-` to store function results in an object
+mean_age <- mean(ages) # Use `<-` to store function results
 mean_age
 
 ?mean # Use `?` to get help
