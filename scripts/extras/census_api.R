@@ -6,7 +6,7 @@ library(tidyverse)
 
 # If this is your first time accessing the Census API:
 # - Sign up for a Census API key here: https://api.census.gov/data/key_signup.html
-# - Store for future use with `tidycensus::census_api_key()`
+# - Store for future use with `tidycensus::census_api_key`
 
 
 # Determine tables/vars:
@@ -15,7 +15,7 @@ library(tidyverse)
 # - B17001_002: In poverty
 
 acs_vars <- c(
-  "med_hh_income" = "B19013_001",
+  "med_hh_inc" = "B19013_001",
   "pov_univ" = "B17001_001",
   "in_pov" = "B17001_002"
 )
@@ -45,9 +45,8 @@ acs_data %>%
     se = moe / 1.645,
     cv = se / estimate,
     reliable = cv < 0.1
-  )
-
-# count(reliable) # All are reliable
+  ) %>%
+  count(reliable) # All are reliable
 
 
 # For more, see: https://walker-data.com/tidycensus/
