@@ -16,7 +16,7 @@ This training draws on the work of [Hadley Wickham](http://hadley.nz/), [Garret 
 
 In addition to the above resources, this training also draws on [Teaching Tech Together](http://teachtogether.tech/en/index.html) by Greg Wilson. In particular, [these rules](http://teachtogether.tech/en/index.html#the-rules) are used as guiding principles.
 
-PS: Be sure to also check out [RStudio Cheatsheets](https://rstudio.com/resources/cheatsheets/) for quick desktop references on topics like data import, cleaning, and visualization.
+PS: Be sure to also check out [RStudio Cheatsheets](https://rstudio.com/resources/cheatsheets/) for quick desktop references on topics like data import, cleaning, and visualization. For a quick introduction to Git and GitHub, check out the [Git Handbook](https://guides.github.com/introduction/git-handbook/).
 
 ## Organization
 
