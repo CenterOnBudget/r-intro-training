@@ -14,7 +14,7 @@ library(writexl)
 # Store results of `read_excel` in an object named `sheeo_raw`
 
 sheeo_raw <- read_excel(
-  path = "data-raw/sheeo_shef_report_fy19_data.xlsx",
+  path = "data-raw/sheeo_shef_report_fy19.xlsx",
   sheet = 2,
   col_names = TRUE # This is a default argument
 )
@@ -27,7 +27,7 @@ view(sheeo_raw)
 # Use same approach to import BLS data
 # Note that we can take advantage of positional and default arguments
 
-bls_raw <- read_excel("data-raw/bls_cpi_u_rs_data.xlsx", skip = 5)
+bls_raw <- read_excel("data-raw/bls_cpi_u_rs.xlsx", skip = 5)
 
 
 # Clean data -------------------------------------------------------------------
@@ -146,6 +146,6 @@ print(real_support_fte_table, n = Inf)
 # Export data ------------------------------------------------------------------
 
 
-write_csv(analysis_data, "data/higher_ed_funding_data.csv")
-write_xlsx(real_support_fte_table, "results/real_support_fte_table.xlsx")
+write_csv(analysis_data, "data/higher_ed_funding.csv")
+write_xlsx(real_support_fte_table, "results/real_support_fte.xlsx")
 
