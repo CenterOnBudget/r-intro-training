@@ -4,7 +4,7 @@
 
 ## Overview
 
-Introduction to R based on analyzing trends in state higher education funding using data from [SHEEO](https://shef.sheeo.org/data-downloads/) and [BLS](https://www.bls.gov/cpi/research-series/home.htm). Concepts covered include simple base R syntax and [tidyverse](https://github.com/tidyverse) tools for data import, cleaning, analysis, and export.
+Introduction to R based on analyzing trends in state higher education funding using data from [SHEEO](https://shef.sheeo.org/data-downloads/) and [BLS](https://www.bls.gov/cpi/research-series/home.htm). Concepts covered include simple base R syntax and [tidyverse](https://www.tidyverse.org/) tools for data import, cleaning, analysis, and export.
 
 ## Resources
 
