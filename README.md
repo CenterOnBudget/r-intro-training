@@ -18,16 +18,6 @@ In addition to the above resources, this training also draws on [Teaching Tech T
 
 PS: Be sure to also check out [RStudio Cheatsheets](https://rstudio.com/resources/cheatsheets/) for quick desktop references on topics like data import, cleaning, and visualization. For a quick introduction to Git and GitHub, check out the [Git Handbook](https://guides.github.com/introduction/git-handbook/).
 
-## Organization
-
-This repository is organized as follows:
-
-- `data-raw/` contains original data files downloaded from online
-- `data/` contains a clean `.csv` dataset with selected variables
-- `results/` contains a spreadsheet with key findings
-- `scripts/` contains code for the training
-- `slides/` contains intro slides for the training
-
 ## Contact
 
 For questions about this repository, please reach out to Matt Saenz (vsaenz@cbpp.org).
