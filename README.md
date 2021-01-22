@@ -1,10 +1,10 @@
-# R-intro-training
+# r-intro-training
 
 [![Project Status: Active - The project has reached a stable, usable state and is being actively developed.](https://www.repostatus.org/badges/latest/active.svg)](https://www.repostatus.org/#active)
 
 ## Overview
 
-Introduction to R based on analyzing trends in state higher education funding using data from [SHEEO](https://shef.sheeo.org/data-downloads/) and [BLS](https://www.bls.gov/cpi/research-series/home.htm). Concepts covered include simple base R syntax and [tidyverse](https://www.tidyverse.org/) tools for data import, cleaning, analysis, and export.
+Intro to R based on analyzing trends in state higher education funding using data from [SHEEO](https://shef.sheeo.org/data-downloads/) and [BLS](https://www.bls.gov/cpi/research-series/home.htm). Concepts covered include simple base R syntax and [tidyverse](https://www.tidyverse.org/) tools for data import, cleaning, analysis, and export.
 
 ## Resources
 
