@@ -35,13 +35,18 @@ pov_rate
 vec <- 1:5
 vec
 
-# A vector is a type of R object
+# `vec` is a vector (a type of object)
 
-# Think of a vector as a:
-# - Column in an Excel spreadsheet
-# - Variable in a Stata dataset
+# In the context of data analysis, think of a vector as a column in an
+# Excel spreadsheet. `vec` is like a column with 5 values:
 
-# R datasets are made of vectors
+# | vec |
+# |-----|
+# |  1  |
+# |  2  |
+# |  3  |
+# |  4  |
+# |  5  |
 
 
 # Functions --------------------------------------------------------------------
