@@ -84,7 +84,9 @@ clean_data %>%
 
 analysis_data <- mutate(
   clean_data,
-  real_support_fte = (support * (cpi_u_rs_2019 / cpi_u_rs)) / fte
+  infl_adj_2019 = cpi_u_rs_2019 / cpi_u_rs, # Inflation adjustment factor
+  real_support = support * infl_adj_2019,   # Real support
+  real_support_fte = real_support / fte     # Real support per FTE
 )
 
 

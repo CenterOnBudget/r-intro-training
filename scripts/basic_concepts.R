@@ -15,7 +15,7 @@
 
 # Store your data in objects
 
-in_pov <- 33 # Create an object with `<-`
+in_pov <- 33 # Create an object with the assignment operator `<-`
 pop <- 325
 
 in_pov
@@ -28,25 +28,20 @@ pov_rate
 # Keep track of your objects with the environment pane
 
 
-# Create a sequence of integers with `:`
+# Create a sequence of integers with the colon operator `:`
 
 1:5
 
-vec <- 1:5
-vec
+x <- 1:10
+x
 
-# `vec` is a vector (a type of object)
+# `x` is a vector (a type of object)
 
-# In the context of data analysis, think of a vector as a column in an
-# Excel spreadsheet. `vec` is like a column with 5 values:
+# Vectors in R are like:
+# - Columns in an Excel spreadsheet
+# - Variables in a Stata dataset
 
-# | vec |
-# |-----|
-# |  1  |
-# |  2  |
-# |  3  |
-# |  4  |
-# |  5  |
+# R data frames are made of vectors
 
 
 # Functions --------------------------------------------------------------------
@@ -60,23 +55,19 @@ vec
 
 # Functions take the basic form function(argument)
 
-vec
-sum(vec)
-mean(vec)
+x
+sum(x)  # Sum the elements of `x`
+mean(x) # Average the elements of `x`
 
 
-# Use the `c` function to combine values
+# Use the `c()` function to combine values into a vector
 
-ages <- c(20, 24, 24, 25, 26, 30, 35, 37, 44, 51)
+ages <- c(22, 26, 30, 34, 36, 41, 48, 54, 65, 71)
 ages
 
-
-# Let's explore `ages`
-
-length(ages)
-mean(ages)
-median(ages)
-sd(ages)
+length(ages) # Number of elements
+mean(ages)   # Mean age
+median(ages) # Median age
 
 
 # Store the results of a function with `<-`
