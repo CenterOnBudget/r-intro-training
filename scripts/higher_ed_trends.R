@@ -85,8 +85,8 @@ clean_data %>%
 analysis_data <- mutate(
   clean_data,
   infl_adj_2019 = cpi_u_rs_2019 / cpi_u_rs, # Inflation adjustment factor
-  real_support = support * infl_adj_2019,   # Real support
-  real_support_fte = real_support / fte     # Real support per FTE
+  real_support = support * infl_adj_2019, # Real support
+  real_support_fte = real_support / fte # Real support per FTE
 )
 
 
@@ -109,4 +109,3 @@ print(real_support_fte_table, n = Inf)
 
 write_csv(clean_data, "data/higher_ed_funding.csv")
 write_xlsx(real_support_fte_table, "results/real_support_fte.xlsx")
-

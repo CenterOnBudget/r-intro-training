@@ -56,7 +56,7 @@ x
 # Functions take the basic form function(argument)
 
 x
-sum(x)  # Sum the elements of `x`
+sum(x) # Sum the elements of `x`
 mean(x) # Average the elements of `x`
 
 
@@ -66,7 +66,7 @@ ages <- c(22, 26, 30, 34, 36, 41, 48, 54, 65, 71)
 ages
 
 length(ages) # Number of elements
-mean(ages)   # Mean age
+mean(ages) # Mean age
 median(ages) # Median age
 
 
@@ -79,4 +79,3 @@ mean_age
 # Use `?` to get help
 
 ?mean
-
